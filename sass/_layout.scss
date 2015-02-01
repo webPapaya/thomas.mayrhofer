@@ -1,0 +1,179 @@
+* {
+  @include box-sizing(border-box);
+}
+html, body {
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: $secondary-light;
+}
+
+section {
+  min-height: 100%;
+  padding: 50px 0;
+  padding-left: 1em;
+  position: relative;
+  z-index: 1;
+
+
+  div[role=main] {
+    @include container;
+  }
+
+  &#home, &#contact {
+    background: $primary-dark;
+    color: $primary-light;
+  }
+
+  &#skills {
+    background: $primary-highlight;
+    color: $primary-light;
+  }
+
+  &#work, &#about {
+    background: $primary-light;
+    color: $primary-dark;
+  }
+
+  div[role=content] > div {
+    @include span-columns(1, 3);
+  }
+
+  div[role=content] > div:nth-child(3n) {
+    @include span-columns(1 omega,3);
+  }
+}
+
+#skills {
+  figure {
+    width: 60px;
+    margin: 3em auto;
+
+    div[role=percentage] {
+      @include border-radius(50%);
+
+      border: 3px solid $primary-light;
+      height: 60px;
+      width: 60px;
+      line-height: 55px;
+      text-align: center;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+  }
+}
+
+#contact {
+  label, textarea, input {
+    display: block;
+    @include span-columns(1 omega, 1);
+  }
+
+  input, textarea {
+    background: none;
+    border: 3px solid $primary-light;
+    margin: 0;
+    padding: 0.5em;
+    color: $primary-light;
+    font-size: 1.3em;
+  }
+
+  label {
+    margin: 1em 0 0.5em;
+    font-size: 1.5em;
+  }
+
+  textarea {
+    min-height: 10em;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  input:focus, textarea:focus, input[type=submit]:hover {
+    border-color: $primary-highlight;
+    outline: none;
+    background: $secondary-dark;
+  }
+
+  input[type=submit]:active {
+    background: $primary-highlight;
+    border-color: $primary-highlight;
+  }
+}
+
+
+
+#main-nav {
+  @include transition(margin-left 0.5s ease);
+  z-index: 99;
+
+  position: fixed;
+  height: 100%;
+  background: $secondary-dark;
+  width: 5em;
+  margin-left: -4em;
+
+  a#close {
+    @include transition(margin-left 0.5s ease);
+    position: relative;
+    width: 5em;
+    margin-left: 4em;
+    background: $secondary-dark;
+  }
+
+  &:hover {
+    margin-left: 0;
+
+    a#close {
+      margin-left: 0;
+    }
+  }
+
+  a {
+    @include transition(all 0.5s ease);
+    padding: 1em;
+    border-top: 1px solid $primary-dark;
+    display: block;
+    color: $primary-light;
+    text-align: center;
+
+    span {
+      @include transition(opacity 0.5s ease);
+      opacity: 0;
+      margin-top: -1em;
+      position: absolute;
+      left: 0;
+      padding: 1em;
+      margin-left: 5em;
+      background: $primary-highlight;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $primary-dark;
+    }
+
+    &:hover {
+      background: $primary-highlight;
+      color: $primary-light;
+
+      span {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 55em) {
+  section {
+    padding-left: 5em;
+  }
+
+  #main-nav {
+    margin-left: 0;
+
+    a#close {
+      display: none;
+    }
+  }
+}

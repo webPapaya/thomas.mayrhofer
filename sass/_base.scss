@@ -1,0 +1,29 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+@include global-reset;
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+// Elastic grid as percentages
+$total-columns: 3;
+$column-width: 6%;
+$gutter-width: 2%;
+$grid-padding: 1%;
+
+$container-style: magic;
+$container-width: 50em;
+
+$primary-dark: #1D1D1B;
+$primary-light: #FFFFFF;
+$primary-highlight: #DA5E41;
+$secondary-light: #87847E;
+$secondary-dark: lighten($primary-dark, 3%);
+$secondary-highlight: #2C3E50;
+
+
+
+
+
