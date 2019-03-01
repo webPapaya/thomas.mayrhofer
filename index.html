@@ -1,146 +1,50 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Thomas Mayrhofer - Portfolio</title>
-
-    <meta name="title" content="Thomas Mayrhofer - Rails Developer">
-    <meta name="author" content="Thomas Mayrhofer">
-    <meta name="description" content="Thomas Mayrhofer is a freelance webdeveloper from Salzburg/Austria. Find my sources on github and follow me on twitter">
-    <meta name="abstract" content="Thomas Mayrhofer is a freelance webdeveloper from Salzburg/Austria">
-    <meta http-equiv="content-language" content="en">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="index,follow">
-    <meta name="revisit-after" content="30 days">
-    <meta name="revisit" content="after 30 days">
-    <meta name="DC.Title" content="Thomas Mayrhofer">
-    <meta name="DC.Creator" content="Thomas Mayrhofer">
-    <meta name="DC.Description" content="Thomas Mayrhofer is a freelance webdeveloper from Salzburg/Austria">
-    <meta name="DC.Language" content="en">
-    <meta name="keywords" lang="en" content="Github, Twitter, Webdesign, Drupal, Webdesign, Ruby, Rails, Javascript, HTML5, CSS3, Github, Design, Current Projects">
-
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="assets/heart.ico">
+<title>Thomas Mayrhofer | Software Developer</title>
+<meta name="author" content="Thomas Mayrhofer">
+<meta name="publisher" content="Thomas Mayrhofer">
+<meta name="copyright" content="Thomas Mayrhofer">
+<meta name="description" content="My name is Thomas Mayrhofer and I'm a Vienna based Software Developer. I'm part of the software craftsmanship community and try to follow ideas of the agile manifesto.">
+<meta name="keywords" content="Agile, Software, Development, TDD, Clean, Code, Agile, Manifesto, JavaScript, NodeJS, Ruby, F#, Functional, Programming, Freelance">
+<meta name="page-topic" content="Forschung Technik">
+<meta http-equiv="content-language" content="en">
+<meta name="robots" content="index, follow">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+<style>
+    html, body {
+        min-width: 100vh;
+        min-height: 100vh;
+        margin: 0;
+        background: #1d1d1b;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .json--code {
+        display: inline-block;
+        font-size: 2rem;
+        color: #a5a5a5;
+    }
+    .json--key {
+        color:#da5e41;
+        padding-left: 2rem;
+    }
+    .json--value {
+        color: #00B274;
+    }
+</style>
 </head>
-<body>
-    <nav id="main-nav">
-        <a class="icon-menu" id="close" href="#close"></a>
-        <a class="icon-home" href="#home" title="Home">
-            <span>home</span>
-        </a>
-        <a class="icon-projects" href="#work" title="current work">
-            <span>projects</span>
-        </a>
-        <a class="icon-about" href="#about" title="about">
-            <span>about</span>
-        </a>
-        <a class="icon-twitter" target="_blank" href="//twitter.com/webpapaya" title="Webpapaya on Twitter">
-            <span>twitter</span>
-        </a>
-        <a class="icon-github" target="_blank" href="//github.com/webPapaya" title="Webpapaya on Github">
-            <span>github</span>
-        </a>
-        <a class="icon-contact" href="mailto:thomas@mayrhofer.at">
-            <span>mail</span>
-        </a>
-    </nav>
-    <section id="home">
-        <div class="display-table">
-            <div class="display-table-cell">
-                <div role="main">
-                    <header>
-                        <h1>
-                            <!--@todo add heard.svg to svg font-->
-                            Hi, my name is <strong>Thomas Mayrhofer</strong> and I <img alt="love" src="assets/heart.svg"/> building Websites.
-                        </h1>
-                    </header>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="work">
-        <div role="main">
-            <h1>Current Projects</h1>
-            <ul>
-                <li>                
-                    <a href="//qapi.herokuapp.com" title="QAPI">QAPI (Rails)</a>
-                    <a class="icon-github" href="//github.com/secretBears/QAPI" title="Github - QAPI">Github</a>
-                </li>
-                <li>
-                    <a href="http://bit.ly/1rCwGun" title="Behance - QAPI Logo">QAPI Logo (Design)</a>
-                </li>
-                <li>
-                    <a href="http://bit.ly/1gRS8bO" title="Behance - Neon Mountains">Neon Mountains Logo (Design)</a>
-                </li>
-                <li>
-                    <a href="https://github.com/webPapaya/fddb" title="Github - FDDB Gem">FDDB (Ruby gem)</a>
-                </li>
-                <li>
-                    <a href="//food-mesh.herokuapp.com/" title="Food Mesh online version">Food Mesh (Rails)</a>
-                    <a class="icon-github" href="//github.com/webPapaya/food-mesh" title="Github - Food Mesh Source">Github</a>
-                </li>
-                <li>
-                    <a href="//may-it.net/" title="May-IT online version">may-it.net (HTML/CSS)</a>
-                </li>
-                <li>
-                    <a href="https://www.behance.net/gallery/Time-Capture/14575287" title="Behance - Time Recording">Time Recording (Design)</a>
-                </li>
-                <li>
-                    <a href="//webpapaya.github.io/soundbox/" title="Soundbox online version">Soundbox (Javascript)</a>
-                    <a class="icon-github" href="//github.com/webPapaya/soundbox" title="Github - Soundbox Source">Github</a>
-                </li>
-                <li>
-                    <a href="//www.mediterran-linz.at/" title="Mediterran online version">Restaurant Mediterran (Drupal)</a>
-                </li>
-                <li>
-                    <a href="//multimediatechnology.at/~fhs34784/my-friend-owes-me/" title="online version">my friend owes me (angular.js)</a>
-                    <a class="icon-github" href="//github.com/webPapaya/myfriendowesme" title="Github - My Friend Owes Me Source">Github</a>
-                </li>
-                <li>
-                    <a href="//pe-institut.at" title="Pe-Institut online version">Institut für Personalentwicklung (Drupal)</a>
-                </li>
-                <li>
-                    <a href="//mup.at" title="Mup online version">Machowetz und Partner (Wordpress)</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="display-table">
-            <div class="display-table-cell">
-                <div role="main">
-                    <header>
-                        <h1>About</h1>
-                    </header>
-                    <div role="article">
-                        <p>
-                            My name is Thomas Mayrhofer and I'm a 22 year old Webdeveloper from Linz/Austria. I'm currently
-                            studying Multimedia Technology at the <a href="http://www.fh-salzburg.ac.at/disziplinen/medien-design-kunst/bachelor-multimediatechnology/beschreibung/beschreibung/">University of Applied Sciences</a> in Salzburg/Austria.
-                        </p>
-                        <img alt="Thomas Mayrhofer Gravatar" src="https://en.gravatar.com/userimage/58963184/73bdacaa90f8d8ed2c9b4f67e18c6e3e.jpg?size=200" />
-                        <p class="center">
-                            On the internet you can also find me under my pseudonym webpapaya.
-                        </p>
-                        <ul>
-                            <li><a class="icon-twitter" target="_blank" href="//twitter.com/webpapaya" title="Webpapaya on Twitter">twitter</a></li>
-                            <li><a class="icon-contact" href="mailto:thomas@mayrhofer.at" title="Webpapaya Mail">mail</a></li>
-                            <li><a class="icon-github" target="_blank" href="//github.com/webPapaya" title="Webpapaya on Github">github</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-48557274-1', 'mayrhofer.at');
-        ga('send', 'pageview');
-    </script>
+<body class="container">
+    <code class="json--code">
+        {<br>
+            <span class="json--key">"name"</span>: <span class="json--value">"Thomas Mayrhofer"</span>,<br>
+            <span class="json--key">"email"</span>: <a target="_blank" href="mailto:thomas@mayrhofer.at" class="json--value">thomas@mayrhofer.at</a>,<br>
+            <span class="json--key">"github"</span>: <a target="_blank" href="https://github.com/webpapaya" class="json--value">"https://github.com/webpapaya"</a>,<br>
+            <span class="json--key">"twitter"</span>: <a target="_blank" href="https://twitter.com/webpapaya" class="json--value">"https://twitter.com/webpapaya</a><br>
+        }
+    </code>
 </body>
 </html>
