@@ -3,12 +3,14 @@ Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §6
 
 Thomas Mayrhofer
 
-Stadlergutweg 13, 
-4040 Linz, 
+Universumstraße 56/21, 
+1200 Wien, 
 Österreich
 
 Tel.: 0043 664 5143856
 E-Mail: thomas@mayrhofer.at
+UID-Nummer: ATU78100369 
+Steuernummer: 07 357/5862
 
 Quelle: Erstellt mit dem Impressum Generator von firmenwebseiten.at in Kooperation mit meinehaustiere.at
 
